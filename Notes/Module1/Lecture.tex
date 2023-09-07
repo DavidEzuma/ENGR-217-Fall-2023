@@ -22,5 +22,38 @@
     \maketitle
 
     \section{Measurements}
+        \par Many of the measurements that will be taken pertain to electrical characteristics changing due to environmental factors. Most of the time what we measure is changes in voltage. We need to convert changes in voltage which are analog (continuous) values to digital (discrete) values, since computers are digital.
         
+        \subsection*{Electrical Properties of Matter}
+          \begin{itemize}
+            \item voltage
+            \item Resistance
+            \item Capacitance
+            \item Inductance
+            \item others
+          \end{itemize}
+            \subsubsection*{Voltage}
+              It is a measure of electric potential. The, electric potential energy of a charged particle in an electric field, divided by the amount of charge (\texttt{Joules/Coulomb}).Volts are a difference in potential between two points (some point and ground, some point and infinity, two different points, etc.)
+
+        \subsection*{THings to think about with an ADC}
+          \begin{itemize}
+            \item Speed
+            \item Input Range
+            \item Resolution
+            \item Differential or single ended
+          \end{itemize}
+          \subsubsection*{Differential v. Single Ended}
+          Single-ended are taken relative to the DAQ electrical ground (in your case, the air table is plugged in to the building, so the building ground.) These can be done with a single wire.\vspace{8pt}
+          \par Differential looks at the voltage difference between two input wires, which may or may not have anything to do with the DAQ ground.
+          \begin{itemize}
+            \item differential is more accurate
+            \item Harder though: 1need two wires and need to isolate the ADC system from the ground
+          \end{itemize}
+          \subsubsection*{Speed}
+             This is the measure of samples per second(Hertz). For our lab we get by with thousands of samples per second – kilo Hertz - kHz.
+          \subsubsection*{Range}
+            \textbf{Maximum Voltage difference} \ra Values can only be read in this range. If a value is too high or too low, it will be "\texttt{clipped}" to the crossed extrema.
+            \begin{itemize}
+              \item  You can often use signal conditioning to make readings of out-of-range values, or make readings which use more of the range
+            \end{itemize}
 \end{document}
