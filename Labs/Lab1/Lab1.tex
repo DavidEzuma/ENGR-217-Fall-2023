@@ -1,0 +1,35 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{circuitikz}
+
+\renewcommand{\rightarrow}{\ra}
+\newenvironment{6minipage}{
+  \begin{minipage}{6cm}
+}{
+  \end{minipage}
+}
+
+\title{\texttt{Lab 1}\\\hrulefill}
+\author{Intro to DAQ}
+\date{\small{9/5/2023}}
+
+\begin{document}
+    \maketitle
+
+    \begin{center}Instructors email: Laurel.plagens@tamu.edu\end{center}
+    \section{Goals}
+    \begin{enumerate}
+      \item Measure known voltage and assess the measurement uncertainty of the device. $\surd$
+      \item Use DAQ to measure an unknown voltage
+      \item a plot showing the number of samples (N) v. average voltage reading $\surd$
+      \item a plot of N v uncertainty in the average voltage reading from the DAQ $\surd$
+      \item Measurement and uncertainty of the unknown voltage
+      \item plot showing the data taken for the unknown voltage measurement
+      \item discussion in differences of both uncertainties
+    \end{enumerate}
+
+\end{document}
