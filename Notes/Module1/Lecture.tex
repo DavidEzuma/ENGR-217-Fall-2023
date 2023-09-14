@@ -52,8 +52,16 @@
           \subsubsection*{Speed}
              This is the measure of samples per second(Hertz). For our lab we get by with thousands of samples per second – kilo Hertz - kHz.
           \subsubsection*{Range}
-            \textbf{Maximum Voltage difference} \ra Values can only be read in this range. If a value is too high or too low, it will be "\texttt{clipped}" to the crossed extrema.
+            \texttt{Maximum Voltage difference} \ra Values can only be read in this range. If a value is too high or too low, it will be "\texttt{clipped}" to the crossed extrema.
             \begin{itemize}
               \item  You can often use signal conditioning to make readings of out-of-range values, or make readings which use more of the range
+              \item The signal entering a radio is 0.1 mV. You pass the signal through an amplifier circuit that raises it to the 1 V range
+            \end{itemize}
+          \subsubsection*{Resolution}
+            Smallest incremental voltage that can be recognized and thus
+            causes a change in the digital output.
+            \begin{itemize}
+              \item Assume again we have a 4-bit ADC with an input range of 5 V. There are 16 possible outputs. We let each output represent an equal part of the range between 0 and 5 V.
+              \item 5 V/16 = 0.3125 V width for each sub range – our resolution is 0.3125 V in volt terms.
             \end{itemize}
 \end{document}
