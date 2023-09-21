@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+
+\newcommand{\ra}{$\rightarrow$}
+\newenvironment{6mini}{
+  \begin{minipage}{6cm}
+}{
+  \end{minipage}
+}
+
+\title{\texttt{Current, Voltage, Resistance, Temp}\\\hrulefill}
+\author{Module 5}
+\date{\small{//}}
+
+\begin{document}
+    \maketitle
+
+    \section{Voltage}
+    \begin{itemize}
+        \item Driver of current (Joules per Coulomb) \[1V=\frac{W}{Q}\]
+        \item Higher voltage is associated with a higher current (pressure differencial in )
+    \end{itemize}
+    \section{Current}
+    \begin{itemize}
+        \item Current is the rate of flow of charge past a fixed point(1 Ampere) \[I=\frac{Q}{t}\]
+    \end{itemize}
+    \section{Resistance}
+        Resistance is the opposition of the flow of electrical charge (current) in a material
+        \begin{itemize}
+            \item Cause by collision of charges moving through the material (similar to friction). Resistance \underbar{converts electrical energy to heat}.
+            \item insulators are Material that strongly resist the flow of current. Electrons are bounded tightly to atoms
+        \end{itemize}
+
+        resistivity also depends n temperature, resistivity usually increases with increasing temperature. \[\rho(T)=\rho_A[1+\alpha(T-T_A)]\]
+             \begin{itemize}
+                \item $\rho_A$ reference resistivity at the referenec temperature $T_A$
+            \end{itemize}
+            \[R=\frac{\rho l}{A}=\frac{l}{\sigma A}\]
+
+        \subsection*{Conductivity}
+            \[\sigma = \frac{1}{\rho}\]
+        \subsection*{Series}
+            Series resistors are connected end to end with nothing else connected in between
+        \subsection*{Parallel}
+            Parallel resistors are connected together at each end. *Branched path
+
+        \subsection*{Resistivity} 
+
+        \subsection*{Current density}
+            \[J=\frac{1}{\rho}E=\sigma E\]where
+             $\rho$ is the resistivity with units of $\omega \cdot m$. 
+             
+
+    \section*{Ohm's law}
+        \[V=IR\]
+        \[V_{term}=\epsilon-I_r\]
+        \begin{itemize}
+            \item Voltage from the terminal, electric motive force, and internal resistance
+        \end{itemize}
+\end{document}
